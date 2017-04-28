@@ -1,0 +1,46 @@
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+  background-color:	#343d46;
+  color: #ffffff;
+}
+
+.block-center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.square{
+  height: 100px;
+  width: 100px;
+  border-style: outset;
+  float: left;
+  background-color: #65737e;
+  font-size: 9vw;
+  padding-top: 35px;
+  text-align: center;
+}
+
+.square:hover{
+  zoom:0.99999;
+}
+
+.center{
+  margin-left: 39%;
+}
+
+.disabled{
+  pointer-events: none;
+}
+
+button{
+  border-radius: 1000px;
+}
