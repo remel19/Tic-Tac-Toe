@@ -2,6 +2,7 @@ var squares = [,,,,,,,,,];
 var playerInputx = 'X';
 var playerInput0 = '0';
 var turn = playerInputx;
+$('#player-turn').html("Player " + turn + "'s turn ");
 
 $('.square').click(function (event) {
   var boxNumber = event.target.id;
@@ -10,6 +11,7 @@ $('.square').click(function (event) {
   }else{
     $('#' + boxNumber).html(turn);
     squares[boxNumber] = turn;
+    $('#player-turn').html("Player " + turn + "'s turn ");
     if(turn == playerInputx)
       turn = playerInput0;
     else
